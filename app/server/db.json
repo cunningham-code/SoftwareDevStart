@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "text": "Hello",
+      "id": 1608357863636,
+      "date": "Dec 19th, 01:04"
+    },
+    {
+      "text": "Test!?",
+      "id": 1608358131116,
+      "date": "Dec 19th, 01:08"
+    },
+    {
+      "text": "Yay!",
+      "id": 1608363741271,
+      "date": "Dec 19th, 02:42"
+    },
+    {
+      "text": "Wow it's late - lol.",
+      "id": 1608363749582,
+      "date": "Dec 19th, 02:42"
+    }
+  ]
+}

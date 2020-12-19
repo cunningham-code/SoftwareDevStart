@@ -1,7 +1,7 @@
 {
-  "name": "{{ name }}",
-  "description": "{{ description }}",
-  "author": "{{ author }}",
+  "name": "SoftwareDevMethodologies",
+  "description": "Software Dev Methodologies",
+  "author": "Software Dev Methodologies Course",
   "private": true,
   "scripts": {
     "start": "node ./server/server.js",
@@ -11,15 +11,12 @@
     "build-client": "cross-env NODE_ENV=production browserify client/src/client.js | uglifyjs --compress warnings=false --mangle > client/dist/build.js"
   },
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.21.0",
     "body-parser": "~1.18.2",
-    "compression": "^1.7.1",
-    "cookie-parser": "~1.4.3",
     "ejs": "~2.5.7",
-    "express": "~4.15.5",
+    "express": "^4.17.1",
     "lowdb": "^1.0.0",
     "moment": "^2.20.1",
-    "morgan": "~1.9.0",
     "vue": "^2.0.1",
     "vue-router": "^3.0.1"
   },

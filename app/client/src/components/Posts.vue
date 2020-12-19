@@ -1,19 +1,33 @@
 <template>
   <div class="posts">
     <div class="post-form">
-      <textarea v-model="formInput" @keyup="formError = ''"></textarea>
-      <button @click="addPost">Add post</button>
+      <textarea class="form-control" v-model="formInput" @keyup="formError = ''"></textarea>
+      <button type="button" class="btn btn-primary mt-3" @click="addPost">Add post</button>
       <div class="post-form-error" v-if="formError">{{formError}}, probably should fill the form</div>
     </div>
-    <ul class="post-list">
-      <li v-for="(post, index) in posts" :key="index" class="post-item">
+    <div class="post-list">
+      <div v-for="(post, index) in posts" :key="index" class="post-item">
+        <!--
         <div class="post-date">{{post.date}}</div>
         <div class="post-text">{{post.text}}</div>
         <div class="post-button">
           <button @click="deletePost(post.id)">Delete post</button>
         </div>
-      </li>
-    </ul>
+        -->
+        <div class="card my-5">
+          <div class="card-header">
+            {{post.date}}
+          </div>
+          <div class="card-body">
+            <p class="card-text">{{post.text}}</p>
+            <!--<a href="#" class="card-link">Go somewhere</a>-->
+            <div class="post-button">
+              <button type="button" class="btn btn-danger" @click="deletePost(post.id)">Delete post</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -57,6 +71,7 @@ export default {
 </script>
 
 <style scoped>
+/*
   .posts {
     display: flex;
     justify-content: center;
@@ -150,5 +165,6 @@ export default {
       margin-left: 0;
     }
   }
+  */
 </style>
 

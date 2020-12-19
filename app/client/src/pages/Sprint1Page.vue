@@ -1,6 +1,8 @@
 <template>
   <div class="page page--about">
-    <h3>About page</h3>
+    <div class="alert alert-danger" role="alert">
+      This page is TBD
+    </div>
     <p>{{ welcome }}</p>
     <p class="about-logo">
       <a href="http://github.com/rdxi/vue-express" target="_blank">
@@ -14,7 +16,7 @@
 export default {
   data: function() {
     return {
-      welcome: 'Welcome to about page!'
+      welcome: 'Welcome to the Sprint 1 page!'
     }
   }
 
