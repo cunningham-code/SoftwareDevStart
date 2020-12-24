@@ -1,0 +1,34 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "ejs": "~2.5.7",
+    "express": "^4.17.1",
+    "lowdb": "^1.0.0",
+    "moment": "^2.20.1",
+    "axios": "^0.19.2",
+    "core-js": "^3.6.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-preset-es2015": "^6.0.0",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.1",
+    "cross-env": "^1.0.6",
+    "nodemon": "2.0.4",
+    "uglify-js": "^2.5.0",
+    "vueify": "^9.1.0",
+    "watchify": "^3.4.0",
+    "concurrently": "^3.5.0"
+  },
+  "scripts": {
+    "watch-client": "npm start --prefix ./client",
+    "watch-server": "nodemon server/server.js --watch server --ignore db.json --delay 500ms",
+    "watch": "concurrently \"npm run watch-client\" \"npm run watch-server\" --timestamp-format \"HH:mm:ss\" --prefix \"{time} [{name}]\" --kill-others --names \"client,server\" "
+  },
+  "author": "",
+  "license": "ISC"
+}
