@@ -31,6 +31,10 @@ export default class Posts extends Vue {
     private posts: any[] = [];
     private formInput: string = '';
     private formError: string = '';
+
+    created() {
+        
+    }
 }
 </script>
 
