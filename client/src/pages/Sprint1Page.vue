@@ -16,8 +16,8 @@
 import { Component, Vue } from "vue-property-decorator";
 
 @Component
-export default class Sprint2Page extends Vue {
-    private welcome: string = "Welcome to the Sprint 2 Page!";
+export default class Sprint1Page extends Vue {
+    private welcome: string = "Welcome to the Sprint 1 Page!";
 }
 </script>
 

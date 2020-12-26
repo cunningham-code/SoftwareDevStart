@@ -21,11 +21,6 @@
             <li class="nav-item">
               <router-link class="nav-link" to="/sprint3">Sprint 3</router-link>
             </li>
-            <!--
-            <li class="nav-item">
-              <router-link class="nav-link" to="/!@#$%">Sprint 3</router-link>
-            </li>
-            -->
           </ul>
         </div>
     </nav>
