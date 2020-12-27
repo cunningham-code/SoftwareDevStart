@@ -1,14 +1,14 @@
 var express = require('express');
-var app = express();
-var db = require('./database.js');
+const router = express.Router();
+var db = require('../datastore/datastore.js');
 var moment = require('moment');
 
-app.get('/posts', function (req, res) {
+router.get('/posts',  (req, res) => {
   var data = db.get('posts').value();
-  res.send(data);
+  res.json(data);
 });
 
-app.post('/posts', function (req, res) {
+router.post('/posts', (req, res) => {
   var newPost = {
     text: req.body.text,
     id: new Date().getTime(),
@@ -23,7 +23,7 @@ app.post('/posts', function (req, res) {
   }
 });
 
-app.delete('/posts/:id', function (req, res) {
+router.delete('/posts/:id', (req, res) => {
   var deleteResult = db.get('posts').remove({ id: parseInt(req.params.id, 10) }).write();
 
   if (deleteResult.length) {
@@ -33,4 +33,4 @@ app.delete('/posts/:id', function (req, res) {
   }
 });
 
-module.exports = app;
+module.exports = router;
