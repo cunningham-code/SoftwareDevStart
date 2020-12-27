@@ -5,7 +5,7 @@
 #         directory being updated
 ###
 
-### Client Dependencies ###
+### Root-level dependencies ###
 # Checks to make sure the node_modules folder exists
 if [ ! -d ./node_modules ]
 then
@@ -14,6 +14,7 @@ else
     echo "Project root dependencies already installed!"    
 fi
 
+### Client Dependencies ###
 cd ./client
 # Checks to make sure the node_modules folder exists
 if [ ! -d ./node_modules ]

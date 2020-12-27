@@ -5,7 +5,7 @@ var moment = require('moment');
 
 router.get('/posts',  (req, res) => {
   var data = db.get('posts').value();
-  res.json(data);
+  res.status(200).json(data);
 });
 
 router.post('/posts', (req, res) => {
