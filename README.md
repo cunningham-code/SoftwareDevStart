@@ -27,7 +27,7 @@ You should see a progress bar 3 separate times, one after another. Once this com
 npm run watch-project
 ```
 This will start both the `client` and `server` to which you can navigate to
-`http://localhost:8081` to see the app running!
+[http://localhost:8080](http://localhost:8080) to see the app running!
 
 ## Congratulations!
 You now have a working project that you will be extending. We look forward to helping you all through this software development journey!
