@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "nodemon ./server.js --ignore db.json --delay 500ms"
+    "watch": "nodemon ./server.js --ignore db.json --delay 500ms",
+    "test": "NODE_ENV=test && mocha --timeout 10000 --exit"
   },
   "dependencies": {
     "cors": "2.8.5",
