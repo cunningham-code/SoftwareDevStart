@@ -19,6 +19,6 @@ import Posts from '../components/Posts.vue'
     }
 })
 export default class MessagesPage extends Vue {
- 
+  private welcome: string = 'Welcome to messages page!';
 }
 </script>

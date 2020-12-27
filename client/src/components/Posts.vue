@@ -44,16 +44,17 @@ export default class Posts extends Vue {
     created() {
         PostsDataService.getAll()
             .then(response => {
-                this.posts = response.data.reverse();
+              console.log(response.data)
+              this.posts = response.data.reverse();
             })
             .catch(err => {
-                console.error(`Couldn't fetch all posts: ${err}`)
+              console.error(`Couldn't fetch all posts: ${err}`)
             })
     }
 
     public addPost(): void {
         const newPost: Post = {
-            text: this.formInput
+          text: this.formInput
         }
 
         PostsDataService.create(newPost)
