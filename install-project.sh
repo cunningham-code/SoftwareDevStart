@@ -6,7 +6,6 @@
 ###
 
 ### Client Dependencies ###
-
 cd ./client
 # Checks to make sure the node_modules folder exists
 if [ ! -d ./node_modules ]
