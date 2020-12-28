@@ -1,8 +1,8 @@
-import https from "./http-common";
+import https from './http-common';
 
 class PostsDataService {
   getAll() {
-    return https.get("/posts");
+    return https.get('/posts');
   }
 
   get(id: number) {
@@ -10,7 +10,7 @@ class PostsDataService {
   }
 
   create(data: any) {
-    return https.post("/posts", data);
+    return https.post('/posts', data);
   }
 
   update(id: string, data: any) {
