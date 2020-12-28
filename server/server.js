@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: true }));    // Allow the backend to pars
 //app.use(cookieParser());
 
 /* Tells the application where public files like images, styling, and the minified javascript code lives */
-app.use(express.static(path.join(__dirname, "../client", "dist")));
+app.use(express.static(path.join(__dirname, '..', 'client', 'dist')));
 
 /* Defines API endpoint routes prefixed with /api
         - all routes inside will be: http:localhost:[PORT]/api/[your-defined-endpoint]
@@ -40,5 +40,5 @@ app.use(function (err, req, res, next) {
 
 /* Start the server to listen on the defined port */
 app.listen(port, () => {
-    console.log("Server is running at localhost:" + port);
+    console.log('Server is running at localhost:' + port);
 });

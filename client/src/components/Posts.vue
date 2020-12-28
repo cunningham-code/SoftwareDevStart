@@ -30,7 +30,7 @@ import PostsDataService from '../services/PostsDataService';
 interface Post {
     id?: number,
     text: string,
-    date?: string   
+    date?: string
 };
 
 @Component
@@ -38,8 +38,6 @@ export default class Posts extends Vue {
     private posts: Post[] = [];
     private formInput: string = '';
     private formError: string = '';
-
-    
 
     created() {
         PostsDataService.getAll()

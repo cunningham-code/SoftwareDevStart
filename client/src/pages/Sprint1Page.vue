@@ -13,11 +13,11 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue } from 'vue-property-decorator';
 
 @Component
 export default class Sprint1Page extends Vue {
-    private welcome: string = "Welcome to the Sprint 1 Page!";
+    private welcome: string = 'Welcome to the Sprint 1 Page!';
 }
 </script>
 
