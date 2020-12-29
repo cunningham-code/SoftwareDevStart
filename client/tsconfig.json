@@ -13,7 +13,7 @@
     "baseUrl": ".",
     "types": [
       "webpack-env",
-      "cypress"
+      "browser"
     ],
     "paths": {
       "@/*": [
