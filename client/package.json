@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "watch": "vue-cli-service serve",
-    "test": "cypress open",
+    "cypress": "cypress open",
+    "test": "cypress run",
     "build": "vue-cli-service build"
   },
   "dependencies": {
