@@ -19,23 +19,23 @@ import { Component, Vue } from 'vue-property-decorator';
 
 @Component
 export default class Sprint1Page extends Vue {
-    private title: string = 'Sprint Three: Working with your users.';
-    private description: string = 'The final sprint is about adding the details needed to meet your users needs. This includes adding authentication, and implementing an authorization rule. It also includes integrating a cloud-computing service to implement additional app functionality. Finally, you will publish your project publicly using a hosting service.';
+  private title: string = 'Sprint Three: Working with your users.';
+  private description: string = 'The final sprint is about adding the details needed to meet your users needs. This includes adding authentication, and implementing an authorization rule. It also includes integrating a cloud-computing service to implement additional app functionality. Finally, you will publish your project publicly using a hosting service.';
 
-    private rubricLink: string = 'https://docs.google.com/document/d/1tmB0vWYyzrfBP0OmJcrpvNmTSm6az5x_mA3LnijLUjo/edit?usp=sharing';
-    private slackLink: string = 'https://app.slack.com/client/T01HDFMDT0T/C01GYGE27M5';
-    private descLink: string = 'https://docs.google.com/document/d/1igm6ORVncy5TLJkQsHFqOr72ojPIQ7bRpjF-H4ss0GY/edit?usp=sharing';
-    private coursesiteLink: string = 'https://coursesite.lehigh.edu/course/view.php?id=195061';
+  private rubricLink: string = 'https://docs.google.com/document/d/1tmB0vWYyzrfBP0OmJcrpvNmTSm6az5x_mA3LnijLUjo/edit?usp=sharing';
+  private slackLink: string = 'https://app.slack.com/client/T01HDFMDT0T/C01GYGE27M5';
+  private descLink: string = 'https://docs.google.com/document/d/1igm6ORVncy5TLJkQsHFqOr72ojPIQ7bRpjF-H4ss0GY/edit?usp=sharing';
+  private coursesiteLink: string = 'https://coursesite.lehigh.edu/course/view.php?id=195061';
 }
 </script>
 
 <style scoped>
-    .about-logo a {
-        padding: 20px;
-        outline: 1px solid rgb(169, 169, 169);
-        display: inline-block;
-    }
-    .about-logo a:hover {
-        opacity: 0.8;
-    }
+  .about-logo a {
+    padding: 20px;
+    outline: 1px solid rgb(169, 169, 169);
+    display: inline-block;
+  }
+  .about-logo a:hover {
+    opacity: 0.8;
+  }
 </style>

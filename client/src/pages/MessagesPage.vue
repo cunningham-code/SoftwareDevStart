@@ -14,9 +14,9 @@ import { Component, Vue } from 'vue-property-decorator';
 import Posts from '../components/Posts.vue'
 
 @Component({
-    components: {
-        Posts
-    }
+  components: {
+    Posts
+  }
 })
 export default class MessagesPage extends Vue {
   private welcome: string = 'Welcome to messages page!';
