@@ -37,17 +37,18 @@ You now have a working project that you will be extending. We look forward to he
 ## Here are some helpful links to get you started
 
 ### Project Links
-[Project Description](https://docs.google.com/document/d/1igm6ORVncy5TLJkQsHFqOr72ojPIQ7bRpjF-H4ss0GY/edit?usp=sharing)
-[Coursesite](https://coursesite.lehigh.edu/course/view.php?id=195061)
+- [Project Description](https://docs.google.com/document/d/1igm6ORVncy5TLJkQsHFqOr72ojPIQ7bRpjF-H4ss0GY/edit?usp=sharing)
+- [Coursesite](https://coursesite.lehigh.edu/course/view.php?id=195061)
+- Here's a [working demo](https://cse298-test.herokuapp.com) of our initial version of this app!
 
 ### Sprint 1 Links
-[Sprint 1 Rubric](https://docs.google.com/document/d/1zVWKnUkdp5YZLm7QTdsexhSakfIsVgAkUdsRtXHgYRc/edit?usp=sharing)
-[Sprint 1 Slack](https://app.slack.com/client/T01HDFMDT0T/C01J352F8U8)
+- [Sprint 1 Rubric](https://docs.google.com/document/d/1zVWKnUkdp5YZLm7QTdsexhSakfIsVgAkUdsRtXHgYRc/edit?usp=sharing)
+- [Sprint 1 Slack](https://app.slack.com/client/T01HDFMDT0T/C01J352F8U8)
 
 ### Sprint 2 Links
-[Sprint 2 Rubric](https://docs.google.com/document/d/1Qi0mLd4HHjZMbRWRkb1ZPnmVwi6DQGEoMSF7_kbbkXw/edit?usp=sharing)
-[Sprint 2 Slack](https://app.slack.com/client/T01HDFMDT0T/C01GYGDP3JT)
+- [Sprint 2 Rubric](https://docs.google.com/document/d/1Qi0mLd4HHjZMbRWRkb1ZPnmVwi6DQGEoMSF7_kbbkXw/edit?usp=sharing)
+- [Sprint 2 Slack](https://app.slack.com/client/T01HDFMDT0T/C01GYGDP3JT)
 
 ### Sprint 3 Links
-[Sprint 3 Rubric](https://docs.google.com/document/d/1tmB0vWYyzrfBP0OmJcrpvNmTSm6az5x_mA3LnijLUjo/edit?usp=sharing)
-[Sprint 3 Slack](https://app.slack.com/client/T01HDFMDT0T/C01GYGE27M5)
+- [Sprint 3 Rubric](https://docs.google.com/document/d/1tmB0vWYyzrfBP0OmJcrpvNmTSm6az5x_mA3LnijLUjo/edit?usp=sharing)
+- [Sprint 3 Slack](https://app.slack.com/client/T01HDFMDT0T/C01GYGE27M5)

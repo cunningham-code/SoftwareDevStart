@@ -6,7 +6,8 @@
     "watch": "vue-cli-service serve",
     "cypress": "cypress open",
     "test": "cypress run",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "build-watch": "vue-cli-service build --watch"
   },
   "dependencies": {
     "@vue/cli-plugin-babel": "^4.3.0",
