@@ -1,5 +1,0 @@
-// Explanation for why this file is here is provided below
-// https://babeljs.io/docs/en/
-{
-  "presets": ["es2015"]
-}
