@@ -28,52 +28,52 @@ import { Component, Vue } from 'vue-property-decorator';
 import PostsDataService from '../services/PostsDataService';
 
 interface Post {
-    id?: number,
-    text: string,
-    date?: string
+  id?: number,
+  text: string,
+  date?: string
 };
 
 @Component
 export default class Posts extends Vue {
-    private posts: Post[] = [];
-    private formInput: string = '';
-    private formError: string = '';
+  private posts: Post[] = [];
+  private formInput: string = '';
+  private formError: string = '';
 
-    created() {
-        PostsDataService.getAll()
-            .then(response => {
-              console.log(response.data)
-              this.posts = response.data.reverse();
-            })
-            .catch(err => {
-              console.error(`Couldn't fetch all posts: ${err}`)
-            })
+  created() {
+    PostsDataService.getAll()
+      .then(response => {
+        console.log(response.data)
+        this.posts = response.data.reverse();
+      })
+      .catch(err => {
+        console.error(`Couldn't fetch all posts: ${err}`)
+      })
+  }
+
+  public addPost(): void {
+    const newPost: Post = {
+      text: this.formInput
     }
 
-    public addPost(): void {
-        const newPost: Post = {
-          text: this.formInput
-        }
+    PostsDataService.create(newPost)
+      .then(response => {
+        this.posts.unshift(response.data);
+      })
+      .catch(err => {
+        this.formError = err.reponse.statusText;
+      })
+  }
 
-        PostsDataService.create(newPost)
-          .then(response => {
-            this.posts.unshift(response.data);
-          })
-          .catch(err => {
-            this.formError = err.reponse.statusText;
-          })
-    }
-
-    public deletePost(id: number): void {
-      PostsDataService.delete(id)
-        .then(response => {
-          let newPosts = this.posts.filter(post => post.id !== response.data[0].id);
-          this.posts = newPosts;
-        })
-        .catch(err => {
-          console.error(err.response);
-        })
-    }
+  public deletePost(id: number): void {
+    PostsDataService.delete(id)
+      .then(response => {
+        let newPosts = this.posts.filter(post => post.id !== response.data[0].id);
+        this.posts = newPosts;
+      })
+      .catch(err => {
+        console.error(err.response);
+      })
+  }
 }
 </script>
 

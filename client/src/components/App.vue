@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #039BE5;">
       <a class="navbar-brand" href="#">
           <img src="images/software-dev.png" alt="" width="100px">
-        </a>
+      </a>
       <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">

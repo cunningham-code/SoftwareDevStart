@@ -8,7 +8,7 @@ require('dotenv').config();            // Loads environment variables from a loc
 /* Constants for making the app run */
 const app        = express();             // Creating the application instance
 
-/* 
+/*
  * process.env is an object that contains all the environment variables loaded from a local .env file
  * This is shorthand syntax for saying if process.env.PORT exists, use that value, else use 8080
  */
@@ -25,20 +25,20 @@ app.use(express.urlencoded({ extended: true }));    // Allow the backend to pars
 app.use(express.static(path.join(__dirname, '..', 'client', 'dist')));
 
 /* Defines API endpoint routes prefixed with /api
-        - all routes inside will be: http:localhost:[PORT]/api/[your-defined-endpoint]
+    - all routes inside will be: http:localhost:[PORT]/api/[your-defined-endpoint]
 */
 app.use('/api', apiRoutes); // API routes should be below '/api'
 
 app.use(function (err, req, res, next) {
-    status = err.status || 500
-    message = err.message || 'Internal Server Error'
+  status = err.status || 500
+  message = err.message || 'Internal Server Error'
 
-    console.error('[error] ' + err.stack)
-    res.status(code).json({ status: status })
+  console.error('[error] ' + err.stack)
+  res.status(code).json({ status: status })
 
 })
 
 /* Start the server to listen on the defined port */
 app.listen(port, () => {
-    console.log('Server is running at localhost:' + port);
+  console.log('Server is running at localhost:' + port);
 });

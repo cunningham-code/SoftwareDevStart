@@ -19,23 +19,23 @@ import { Component, Vue } from 'vue-property-decorator';
 
 @Component
 export default class Sprint1Page extends Vue {
-    private title: string = 'Sprint Two: Working better with your teammates.';
-    private description: string = 'This sprint is about working with your teammates. This will involve the backend implementing the singleton design pattern into the API call logic of the app. This will also involve developing a team-wide strategy for how you are going to cache local data - leveraging localstorage and cookies. The backend will need to make a request to an external API, transform the data and then create an endpoint that the frontend can call.';
+  private title: string = 'Sprint Two: Working better with your teammates.';
+  private description: string = 'This sprint is about working with your teammates. This will involve the backend implementing the singleton design pattern into the API call logic of the app. This will also involve developing a team-wide strategy for how you are going to cache local data - leveraging localstorage and cookies. The backend will need to make a request to an external API, transform the data and then create an endpoint that the frontend can call.';
 
-    private rubricLink: string = 'https://docs.google.com/document/d/1Qi0mLd4HHjZMbRWRkb1ZPnmVwi6DQGEoMSF7_kbbkXw/edit?usp=sharing';
-    private slackLink: string = 'https://app.slack.com/client/T01HDFMDT0T/C01GYGDP3JT';
-    private descLink: string = 'https://docs.google.com/document/d/1igm6ORVncy5TLJkQsHFqOr72ojPIQ7bRpjF-H4ss0GY/edit?usp=sharing';
-    private coursesiteLink: string = 'https://coursesite.lehigh.edu/course/view.php?id=195061';
+  private rubricLink: string = 'https://docs.google.com/document/d/1Qi0mLd4HHjZMbRWRkb1ZPnmVwi6DQGEoMSF7_kbbkXw/edit?usp=sharing';
+  private slackLink: string = 'https://app.slack.com/client/T01HDFMDT0T/C01GYGDP3JT';
+  private descLink: string = 'https://docs.google.com/document/d/1igm6ORVncy5TLJkQsHFqOr72ojPIQ7bRpjF-H4ss0GY/edit?usp=sharing';
+  private coursesiteLink: string = 'https://coursesite.lehigh.edu/course/view.php?id=195061';
 }
 </script>
 
 <style scoped>
-    .about-logo a {
-        padding: 20px;
-        outline: 1px solid rgb(169, 169, 169);
-        display: inline-block;
-    }
-    .about-logo a:hover {
-        opacity: 0.8;
-    }
+  .about-logo a {
+    padding: 20px;
+    outline: 1px solid rgb(169, 169, 169);
+    display: inline-block;
+  }
+  .about-logo a:hover {
+    opacity: 0.8;
+  }
 </style>

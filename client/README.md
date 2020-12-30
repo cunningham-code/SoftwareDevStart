@@ -5,7 +5,7 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run watch
 ```
 
 ### Compiles and minifies for production
@@ -13,14 +13,14 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
+### Open the Cypress program to develop end-to-end tests:
 ```
-npm run test
+npm run cypress
 ```
 
-### Lints and fixes files
+### Run your tests
 ```
-npm run lint
+npm test
 ```
 
 ### Customize configuration
