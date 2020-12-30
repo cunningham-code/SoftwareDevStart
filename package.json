@@ -5,12 +5,13 @@
   "scripts": {
     "init": "./install-project.sh",
     "start": "npm run start --prefix ./server",
+    "heroku-prebuild": "npm run init",
     "heroku-postbuild": "npm run build --prefix ./client",
     "watch-client": "npm run watch --prefix ./client",
     "watch-server": "npm run watch --prefix ./server",
     "watch-project": "concurrently \"npm run watch-client\" \"npm run watch-server\" --timestamp-format \"HH:mm:ss\" --prefix \"{time} [{name}]\" --kill-others --names \"client,server\" "
   },
-  "dependencies": {
+  "devDependencies": {
     "concurrently": "5.3.0"
   },
   "author": "",

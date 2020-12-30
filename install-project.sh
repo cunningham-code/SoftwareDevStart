@@ -7,32 +7,15 @@
 
 ### Root-level dependencies ###
 # Checks to make sure the node_modules folder exists
-if [ ! -d ./node_modules ]
-then
-    npm install
-else
-    echo "Project root dependencies already installed!"    
-fi
+npm install
 
 ### Client Dependencies ###
 cd ./client
-# Checks to make sure the node_modules folder exists
-if [ ! -d ./node_modules ]
-then
-    npm install
-else
-    echo "Client dependencies already installed!"    
-fi
+npm install
 
 ### Server Dependencies ###
 cd ../server
-# Checks to make sure the node_modules folder exists
-if [ ! -d ./node_modules ]
-then
-    npm install
-else
-    echo "Server dependencies already installed!"    
-fi
+npm install
 
 # return to root level
 cd ..
