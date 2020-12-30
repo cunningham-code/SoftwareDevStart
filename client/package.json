@@ -1,5 +1,5 @@
 {
-  "name": "vue-typescript-crud",
+  "name": "CSE298-Starter-Client",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -28,5 +28,6 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "license": "UNLICENSED"
 }
